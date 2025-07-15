@@ -1,0 +1,18 @@
+<title>松崎杯</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="shortcut icon" href="favicon.ico">
+<script>
+function startFunc() {
+    var loginFg = localStorage.getItem('loginFg');
+    if(loginFg === undefined || loginFg === null){
+        alert("ログインを完了してください。");
+	var url = "/m-cup/login.html";
+	window.location.href = url;
+    }
+}
+function fetchSelect() {
+    let num = document.querySelector("#selectNumber");
+    var url = "/m-cup/award_" +  num.value + ".html";
+    window.location.href = url;
+}
+</script>
