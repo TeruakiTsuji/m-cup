@@ -8,13 +8,13 @@ function showOrHide() {//パスワードを表示するか隠すかを判断す�
     }
   }
   
-  let userdata = [
+let userdata = [
     //必要に応じてここにログイン情報を追加する。
     //例:{name: "user4",age: 24, email: "user4@exam@;e.com" password: "user-4"}
     { name: "5276", age: 25, email: "tsuji@example.com", password: "0222" }
-  ];
+];
   
-  function login() {
+function login() {
     var loginuser = ""
     var username = document.querySelector("#username").value;
     var password = document.querySelector("#password").value;
@@ -48,4 +48,4 @@ function showOrHide() {//パスワードを表示するか隠すかを判断す�
       alert("ログインに失敗しました。入力している内容がデータと一致しませんでした。間違いがない場合は、ユーザーデータが破損している可能性があります。入力内容に誤りのない場合は、javascriptファイルのuserdata変数を確認してください。\nEnglish...Login failed. Data in the user data variable may be corrupted or entered incorrectly. If there are no typos in what you entered, please check the userdata variable in javascript.");
       console.log("Login failed. Data in the user data variable may be corrupted or entered incorrectly. If there are no typos in what you entered, please check the userdata variable in javascript.");
     }
-  }
+}
