@@ -8,6 +8,25 @@
 <body>
     <div id="header-data"></div>
 
+<script>
+var moveUrl = function(_this, targetName) {
+    var num = _this.options[_this.selectedIndex].value;
+	var url = "/m-cup/award_" +  num + ".html"
+
+	if (targetName) {
+		window.open(url, targetName);
+	} else {
+		location.href = url;
+	}
+};
+
+var sampleSelect = document.getElementById('NumberOfPeople');
+
+sampleSelect.onchange = function() {
+	moveUrl(this, '_blank');
+};
+</script>
+
 <!-- メイン画像 -->
 <div id="mainBanner" class="mainImg">
     <div class="inner">
@@ -69,8 +88,8 @@
             <p>・準優勝 3,000円(参加人数に応じて、4,000円)</p>
             <p>・第3位  2,000円(参加人数に応じて、3,000円)</p>
             <p>参加人数に応じて、跳び賞(5位、10位、15位、20位、BM)として2,000円。</p>
-          　<form action="/award" method="post">
-            <select name="person" required>
+          　<form action="" name="moveurl" id="moveurl">
+            <select name="url" id="NumberOfPeople" required>
               <option value="">-参加人数を選択してください-</option>
               <option value="10">参加人数10名</option>
               <option value="11">参加人数11名</option>
