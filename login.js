@@ -25,9 +25,9 @@ function showOrHide() {//パスワードを表示するか隠すかを判断す�
     var i = 0;
   
     while (!found && i < userdata.length) {//foundがtrueを返すかuserdataのlengthがiより少なくなるまで以下の処理を実行
-      var loginobj = userdata[i].name;
-      var loginuser = loginobj[i].name;
-      var loginpass = loginobj[i].password;
+      var loginobj = userdata[i];
+      var loginuser = loginobj.name;
+      var loginpass = loginobj.password;
       if (loginobj.hasOwnProperty("name") && loginobj.hasOwnProperty("password")) {//データが破損していないかの確認（参考:chatgpt）
         if (loginuser == username && loginpass == password) {
           found = true;
