@@ -8,7 +8,9 @@ function showOrHide() {//パスワードを表示するか隠すかを判断す�
     }
   }
   
-  let userdata = [//必要に応じてここにログイン情報を追加する。例:{name: "user4",age: 24, email: "user4@exam@;e.com" password: "user-4"}
+  let userdata = [
+    //必要に応じてここにログイン情報を追加する。
+    //例:{name: "user4",age: 24, email: "user4@exam@;e.com" password: "user-4"}
     { name: "5276", age: 25, email: "tsuji@example.com", password: "0222" }
   ];
   
