@@ -1,13 +1,7 @@
-function showOrHide() {//パスワードを表示するか隠すかを判断するプログラム
-    let showpass = document.getElementById("pass");
-    let check = document.getElementById("showpassword");
-    if (check.checked) {
-      showpass.type = "text";
-    } else {
-      showpass.type = "password";
-    }
-  }
-  
+function startFunc() {
+    localStorage.removeItem('loginFg');
+}
+
 let userdata = [
     //必要に応じてここにログイン情報を追加する。
     //例:{name: "user4",age: 24, email: "user4@exam@;e.com" password: "user-4"}
@@ -41,6 +35,10 @@ function login() {
     if (found) {/*foundがtrueの場合にcontainer2の要素(<p>)を上書きする。*/
       //alert(`こんにちは。${username}さん。`);
       console.log(`logined is ${username}`);
+      var date = new Date();
+      var fulldatetime = date.getFullYear() + '/' + ('0' + (date.getMonth() + 1)).slice(-2) + '/' +('0' + date.getDate()).slice(-2) + ' ' +  ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2) + ':' + ('0' + date.getSeconds()).slice(-2) + '.' + date.getMilliseconds();
+      var loginlog = fulldatetime;
+      localStorage.setItem('loginFg', loginlog);
     
       var url = "https://teruakitsuji.github.io/m-cup/";
 	    window.location.href = url;
