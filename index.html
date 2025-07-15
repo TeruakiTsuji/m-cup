@@ -1,25 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>松崎杯</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="shortcut icon" href="favicon.ico">
-<script>
-function startFunc() {
-    var loginFg = localStorage.getItem('loginFg');
-    if(loginFg === undefined || loginFg === null){
-        alert("ログインを完了してください。");
-	var url = "/m-cup/login.html";
-	window.location.href = url;
-    }
-}
-function fetchSelect() {
-    let num = document.querySelector("#selectNumber");
-    var url = "/m-cup/award_" +  num.value + ".html";
-    window.location.href = url;
-}
-</script>
-
+    <div id="head-data"></div>
 </head>
 <body onLoad="startFunc()">
     <div id="header-data"></div>
@@ -153,10 +135,9 @@ function fetchSelect() {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="text/javascript" src="html-to-id.js"></script>
 <script>
-let headerAreaName = "#header-data";
-let footerAreaName = "#footer-data";
-    addHtmlToId(headerAreaName, "header.html");
-    addHtmlToId(footerAreaName, "footer.html");
+    addHtmlToId("#head-data", "head.html");
+    addHtmlToId("#header-data", "header.html");
+    addHtmlToId("#footer-data", "footer.html");
 </script>
 </body>
 </html>
