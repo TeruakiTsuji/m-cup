@@ -8,25 +8,6 @@
 <body>
     <div id="header-data"></div>
 
-<script>
-var moveUrl = function(_this, targetName) {
-    var num = _this.options[_this.selectedIndex].value;
-	var url = "/m-cup/award_" +  num + ".html"
-
-	if (targetName) {
-		window.open(url, targetName);
-	} else {
-		location.href = url;
-	}
-};
-
-var sampleSelect = document.getElementById('NumberOfPeople');
-
-sampleSelect.onchange = function() {
-	moveUrl(this, '_blank');
-};
-</script>
-
 <!-- メイン画像 -->
 <div id="mainBanner" class="mainImg">
     <div class="inner">
@@ -152,6 +133,25 @@ sampleSelect.onchange = function() {
     </section>
 </div>
 <div id="footer-data"></div>
+
+<script>
+var moveUrl = function(_this, targetName) {
+    var num = _this.options[_this.selectedIndex].value;
+	var url = "/m-cup/award_" +  num + ".html"
+
+	if (targetName) {
+		window.open(url, targetName);
+	} else {
+		location.href = url;
+	}
+};
+
+var numberSelect = document.getElementById('NumberOfPeople');
+
+numberSelect.onchange = function() {
+	moveUrl(this, '_blank');
+};
+</script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="text/javascript" src="html-to-id.js"></script>
