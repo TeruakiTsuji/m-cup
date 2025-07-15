@@ -41,10 +41,6 @@ function showOrHide() {//パスワードを表示するか隠すかを判断す�
     if (found) {/*foundがtrueの場合にcontainer2の要素(<p>)を上書きする。*/
       alert(`こんにちは。${username}さん。`);
       console.log(`logined is ${username}`);
-      document.getElementById("user").textContent = "ユーザー名:"+loginuser.name;
-      document.getElementById("age").textContent = "年齢:"+loginuser.age;
-      document.getElementById("email").textContent = "Eメール:"+loginuser.email;
-      document.getElementById("password2").textContent = "パスワード:"+loginuser.password;
     
       var url = "https://teruakitsuji.github.io/m-cup/";
 	  window.location.href = url;
