@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="favicon.ico">
 <script>
 function fetchSelect() {
-    let num = document.querySelector("#NumberOfPeople")
+    let fruitSelect = document.querySelector("#selectNumber")
 	var url = "/m-cup/award_" +  num + ".html"
 
 	window.location.href = url;
@@ -78,8 +78,7 @@ function fetchSelect() {
             <p>・準優勝 3,000円(参加人数に応じて、4,000円)</p>
             <p>・第3位  2,000円(参加人数に応じて、3,000円)</p>
             <p>参加人数に応じて、跳び賞(5位、10位、15位、20位、BM)として2,000円。</p>
-          　<form action="" name="moveurl" id="moveurl">
-            <select name="url" id="NumberOfPeople" required>
+            <select name="number" id="selectNumber" required>
               <option value="">-参加人数を選択してください-</option>
               <option value="10">参加人数10名</option>
               <option value="11">参加人数11名</option>
@@ -113,8 +112,6 @@ function fetchSelect() {
               <option value="39">参加人数39名</option>
               <option value="40">参加人数40名</option>
             </select>
-            <button type="button" onclick="fetchSelect()">賞品例</button>
-            </form>
             <p class="readmore"><a href="/m-cup/award_22.html">&raquo; 参加人数が22名の場合の賞品例</a></p>
       </article>
     </section>
