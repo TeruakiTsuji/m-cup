@@ -2,12 +2,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
-<meta name="keywords" content="">
-<title>松崎杯</title>
-<link rel="stylesheet" href="style.css" type="text/css" media="screen">
-<link rel="shortcut icon" href="favicon.ico">
+        <div id="head-data"></div>
     </head>
 <body>
     <div id="header-data"></div>
@@ -183,10 +178,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="text/javascript" src="html-to-id.js"></script>
 <script>
-let headerAreaName = "#header-data";
-let footerAreaName = "#footer-data";
-    addHtmlToId(headerAreaName, "header.html");
-    addHtmlToId(footerAreaName, "footer.html");
+    addHtmlToId("#head-data", "head.html");
+    addHtmlToId("#header-data", "header.html");
+    addHtmlToId("#footer-data", "footer.html");
 </script>
 </body>
 </html>
