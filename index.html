@@ -4,6 +4,19 @@
     <title>松崎杯</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="shortcut icon" href="favicon.ico">
+<script>
+var function fetchSelect() {
+    let num = document.querySelector("#NumberOfPeople")
+	var url = "/m-cup/award_" +  num + ".html"
+
+	if (targetName) {
+		window.open(url, targetName);
+	} else {
+		location.href = url;
+	}
+};
+</script>
+
 </head>
 <body>
     <div id="header-data"></div>
@@ -60,20 +73,6 @@
             <p>松崎会長より5万円の旅行券が贈呈されました。</p>
         </article>
     </section>
-
-<script>
-var function fetchSelect() {
-    let num = document.querySelector("#NumberOfPeople")
-	var url = "/m-cup/award_" +  num + ".html"
-
-	if (targetName) {
-		window.open(url, targetName);
-	} else {
-		location.href = url;
-	}
-};
-</script>
-
     <section class="gridWrapper" id="sub">
         <article class="grid col2">
             <h3>会費について</h3>    
