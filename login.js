@@ -16,8 +16,10 @@ function showOrHide() {//パスワードを表示するか隠すかを判断す�
   
   function login() {
     let loginuser = ""
-    let username = document.querySelector("#username").value;
-    let password = document.querySelector("#password").value;
+    let dusername = document.querySelector("#username");
+    let dpassword = document.querySelector("#password");
+    var username = dusername.value;
+    var password = dpassword.value;
     console.log(username);
     console.log(password);
   
