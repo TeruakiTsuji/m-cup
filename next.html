@@ -3,6 +3,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <div id="head-data"></div>
+<style>
+  table {
+    border-collapse: collapse;
+  }
+  td {
+    border: 1px solid black;
+    padding: 5px;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+  }
+  .clicked {
+    background-color: yellow;
+  }
+</style>
     </head>
 <body onLoad="startFunc()">
     <div id="header-data"></div>
@@ -31,7 +46,7 @@
         <td align="left">■ 組合せ</td>
         </tr>
         </table>
-        <table class="table">
+        <table class="table" id="myTable">
         <col width="10%">
         <tr>
             <th>スタート</th>
@@ -174,7 +189,21 @@
         
         </table>
 <div id="footer-data"></div>
+<script>
+  const table = document.getElementById('myTable');
 
+  table.addEventListener('click', function(event) {
+    const target = event.target;
+
+    // td要素以外がクリックされた場合は無視
+    if (target.tagName !== 'TD') {
+      return;
+    }
+
+    // クリックされたセルにclickedクラスを追加または削除
+    target.classList.toggle('clicked');
+  });
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="text/javascript" src="html-to-id.js"></script>
 <script>
