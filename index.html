@@ -60,6 +60,20 @@
             <p>松崎会長より5万円の旅行券が贈呈されました。</p>
         </article>
     </section>
+
+<script>
+var function fetchSelect() {
+    let num = document.querySelector("#NumberOfPeople")
+	var url = "/m-cup/award_" +  num + ".html"
+
+	if (targetName) {
+		window.open(url, targetName);
+	} else {
+		location.href = url;
+	}
+};
+</script>
+
     <section class="gridWrapper" id="sub">
         <article class="grid col2">
             <h3>会費について</h3>    
@@ -133,19 +147,6 @@
     </section>
 </div>
 <div id="footer-data"></div>
-
-<script>
-var function fetchSelect() {
-    let num = document.querySelector("#NumberOfPeople")
-	var url = "/m-cup/award_" +  num + ".html"
-
-	if (targetName) {
-		window.open(url, targetName);
-	} else {
-		location.href = url;
-	}
-};
-</script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="text/javascript" src="html-to-id.js"></script>
