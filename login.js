@@ -46,11 +46,11 @@ function showOrHide() {//パスワードを表示するか隠すかを判断す�
       document.getElementById("email").textContent = "Eメール:"+loginuser.email;
       document.getElementById("password2").textContent = "パスワード:"+loginuser.password;
     
-      var url = "/m-cup/";
+      var url = "https://teruakitsuji.github.io/m-cup/";
 	  window.location.href = url;
     } else {
-        alert("ログインに失敗しました。入力している内容がデータと一致しませんでした。間違いがない場合は、ユーザーデータが破損している可能性があります。入力内容に誤りのない場合は、javascriptファイルのuserdata変数を確認してください。\nEnglish...Login failed. Data in the user data variable may be corrupted or entered incorrectly. If there are no typos in what you entered, please check the userdata variable in javascript.");
-        console.log("Login failed. Data in the user data variable may be corrupted or entered incorrectly. If there are no typos in what you entered, please check the userdata variable in javascript.");
+      alert("ログインに失敗しました。入力している内容がデータと一致しませんでした。間違いがない場合は、ユーザーデータが破損している可能性があります。入力内容に誤りのない場合は、javascriptファイルのuserdata変数を確認してください。\nEnglish...Login failed. Data in the user data variable may be corrupted or entered incorrectly. If there are no typos in what you entered, please check the userdata variable in javascript.");
+      console.log("Login failed. Data in the user data variable may be corrupted or entered incorrectly. If there are no typos in what you entered, please check the userdata variable in javascript.");
     }
     alert("wait");
   }
