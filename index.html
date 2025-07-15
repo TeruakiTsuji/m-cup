@@ -7,17 +7,197 @@
 </head>
 <body>
 
+    <div id="header">
+    <div class="inner">
+        <!-- ロゴ -->
+        <div class="logo">
+            <a href="/">松崎杯<br><span>児玉カントリー倶楽部 毎月第３土曜日</span></a>
+        </div>
+        <!-- / ロゴ -->
+
+        <!-- 連絡先 -->
+        <div class="info">
+            <table>
+            <tr>
+            <td><p class="tel">連絡先 <strong>03-5276-0222</strong></p><td>
+            </tr>
+            <tr>
+            <td><a href="/logout">ログアウト</a><td>
+            </tr>
+            </table>
+        </div>
+        <!-- / 連絡先 -->
+
+        <!-- トップナビゲーション -->
+  <ul id="topnav">
+    <li class="active"><a href="/">トップページ<br><span>Top</span></a></li>
+    <li class="inactive"><a href="/next">次回のお知らせ<br><span>Next</span></a></li>
+    <li class="inactive"><a href="/year">今年の成績<br><span></span>Results</a></li>
+    <li class="inactive"><a href="/nhdcp">ハンディキャップ<br><span></span>Hdcp</a></li>
+    <li class="inactive"><a href="/victor/1">２１会成績<br><span>21 Cup</span></a></li>
+    <li class="inactive"><a href="/victor/2">松崎杯成績<br><span>Matsuzaki Cup</span></a></li>
+  </ul>
+        <!-- トップナビゲーション -->
+    </div>
+</div>
+
+
 <!-- メイン画像 -->
 <div id="mainBanner" class="mainImg">
     <div class="inner">
-        <img src="mainImg.jpg" width="940" height="300" alt="">
+        <img src="/images/mainImg.jpg" width="940" height="300" alt="">
         <div class="slogan">
             <h2>児玉カントリー倶楽部</h2>
             <h3>Tel. 0495-72-7511 http://www.kodama-cc.jp/</h3>
         </div>
     </div>
 </div>
-</div>
+<!-- / メイン画像 -->
 
+<div id="wrapper">
+
+    <!-- 4カラム -->
+    <section class="gridWrapper">
+        <article class="grid colDark">
+            <h3>最新の成績です</h3>    
+            <p>日付: 2025年06月21日(土)</p>
+            <p>優勝: 金井さん</p>
+            <p class="readmore"><a href="/ymd/20250621">&raquo; 詳細を見る</a></p>
+          <p>松崎会長の83歳お誕生日月の開催のため特別賞を会長に贈呈しました。</p>
+          </p>
+        </article>
+        <article class="grid colLight">
+            <h3>前回の成績です</h3>
+            <p>日付: 2025年05月17日(土)</p>
+            <p>優勝: 松﨑さん</p>
+            <p class="readmore"><a href="/ymd/20250517">&raquo; 詳細を見る</a></p>
+        </article>
+        <article class="grid colDark">
+                  <h3>前前回の成績です</h3>
+            <p>日付: 2025年04月19日(土)</p>
+            <p>優勝: 清家さん</p>
+            <p class="readmore"><a href="/ymd/20250419">&raquo; 詳細を見る</a></p>
+        </article>
+        <article class="grid colLight">
+            <h3>前前前回の成績です</h3>
+            <p>日付: 2025年03月15日(土)</p>
+            <p>優勝: 玉井YUさん</p>
+            <p class="readmore"><a href="/ymd/20250315">&raquo; 詳細を見る</a></p>
+        </article>
+    </section>
+    <!-- / 4カラム -->
+      
+    <section class="gridWrapper" id="sub">
+        <article class="grid col2">
+            <h3>第90回松崎杯について</h3>    
+            <p>節目である90回大会を制したのは金井さんです。</p>
+            <p>松崎会長より5万円の旅行券が贈呈されました。</p>
+        </article>
+    </section>
+    <section class="gridWrapper" id="sub">
+        <article class="grid col2">
+            <h3>会費について</h3>    
+            <p>一律8,000円。</p>
+            <p>会費のうち、1,000円分を賞品代に還元します。</p>
+            <p>・優勝 5,000円</p>
+            <p>・準優勝 3,000円(参加人数に応じて、4,000円)</p>
+            <p>・第3位  2,000円(参加人数に応じて、3,000円)</p>
+            <p>参加人数に応じて、跳び賞(5位、10位、15位、20位、BM)として2,000円。</p>
+          　<form action="/award" method="post">
+            <select name="person" required>
+              <option value="">-参加人数を選択してください-</option>
+              <option value="10">参加人数10名</option>
+              <option value="11">参加人数11名</option>
+              <option value="12">参加人数12名</option>
+              <option value="13">参加人数13名</option>
+              <option value="14">参加人数14名</option>
+              <option value="15">参加人数15名</option>
+              <option value="16">参加人数16名</option>
+              <option value="17">参加人数17名</option>
+              <option value="18">参加人数18名</option>
+              <option value="19">参加人数19名</option>
+              <option value="20">参加人数20名</option>
+              <option value="21">参加人数21名</option>
+              <option value="22">参加人数22名</option>
+              <option value="23">参加人数23名</option>
+              <option value="24">参加人数24名</option>
+              <option value="25">参加人数25名</option>
+              <option value="26">参加人数26名</option>
+              <option value="27">参加人数27名</option>
+              <option value="28">参加人数28名</option>
+              <option value="29">参加人数29名</option>
+              <option value="30">参加人数30名</option>
+              <option value="31">参加人数31名</option>
+              <option value="32">参加人数32名</option>
+              <option value="33">参加人数33名</option>
+              <option value="34">参加人数34名</option>
+              <option value="35">参加人数35名</option>
+              <option value="36">参加人数36名</option>
+              <option value="37">参加人数37名</option>
+              <option value="38">参加人数38名</option>
+              <option value="39">参加人数39名</option>
+              <option value="40">参加人数40名</option>
+            </select>
+            <button type="submit">賞品例</button>
+            </form>
+            <p class="readmore"><a href="/award/28">&raquo; 参加人数が28名の場合の賞品例</a></p>
+      </article>
+    </section>
+    <section class="gridWrapper" id="sub">
+        <article class="grid col2">
+            <h3>ハンディキャップの説明</h3>    
+            <p>最新の開催日から過去12カ月のスコアの平均で計算します。</p>
+            <p>優勝するとその後3回は、ハンディキャップを2割り引きます。</p>
+            <p>直近3回に複数回優勝すると引く割合を4割、6割とします。(大鷹さんシフト)</p>
+            <p>最新の開催日から過去12カ月の期間に出場回数が3回未満の場合は、新ペリで算出されます。</p>
+        </article>
+    </section>
+    <section class="gridWrapper" id="sub">
+        <article class="grid col2">
+          <h3>番外編</h3>    
+          <p>日本で5本の指に数えられる名門コースでのラウンド。</p>
+          <p class="readmore"><a href="/victor/3">&raquo; 詳細を見る</a></p>
+        </article>
+    </section>
+    <section class="gridWrapper" id="sub">
+        <article class="grid col2">
+            <h3>ベストグロスのベスト(BBG)</h3>    
+            <p>コース単位にベストグロス中のベストスコアーーの紹介。</p>
+            <p class="readmore"><a href="/best">&raquo; 詳細を見る</a></p>
+        </article>
+    </section>
+    <section class="gridWrapper" id="sub">
+        <article class="grid col2">
+            <h3>去年の成績</h3>    
+            <p class="readmore"><a href="/year/1">&raquo; 詳細を見る</a></p>
+        </article>
+    </section>
+    <!--
+    <section class="gridWrapper" id="sub">
+        <article class="grid col2">
+            <h3><a href="/images/uchi.jpg">私の家の近く</a></h3>    
+        </article>
+    </section>
+    -->
+</div>
+        <div id="footer">
+    <div class="inner">
+        <section class="gridWrapper">
+            <article class="grid">
+                <p class="logo"><a href="//django-mcup.glitch.me/index">松崎杯<br /><span>Matsuzaki Cup</span></a></p>
+            </article>
+            <article class="grid col3">
+                <ul>
+                <li><a href="/next">次回のお知らせ</a></li>
+                <li><a href="/year">今年の成績</a></li>
+                <li><a href="/nhdcp">ハンディキャップ</a></li>
+                <li><a href="/victor/1">２１会成績</a></li>
+                <li><a href="/victor/2">松崎杯</a></li>
+                </ul>
+                <p>Copyright(©︎) 2023, 2024 Matsuzaki Cup. All Rights Reserved.</p>
+            </article>
+        </section>
+    </div>
+</div>
 </body>
 </html>
