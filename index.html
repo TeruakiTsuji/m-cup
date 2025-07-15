@@ -9,11 +9,7 @@ function fetchSelect() {
     let num = document.querySelector("#NumberOfPeople")
 	var url = "/m-cup/award_" +  num + ".html"
 
-	if (targetName) {
-		window.open(url, targetName);
-	} else {
-		location.href = url;
-	}
+	window.location.href = url;
 }
 </script>
 
