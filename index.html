@@ -5,6 +5,10 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="shortcut icon" href="favicon.ico">
 <script>
+function loadFunc() {
+    var loginFg = localStorage.getItem('loginFg');
+    alert(loginFg);
+}
 function fetchSelect() {
     let num = document.querySelector("#selectNumber");
 	var url = "/m-cup/award_" +  num.value + ".html";
@@ -13,7 +17,7 @@ function fetchSelect() {
 </script>
 
 </head>
-<body>
+<body onLoad="startFunc()">
     <div id="header-data"></div>
 
 <!-- メイン画像 -->
