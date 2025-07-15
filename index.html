@@ -78,6 +78,7 @@ function fetchSelect() {
             <p>・準優勝 3,000円(参加人数に応じて、4,000円)</p>
             <p>・第3位  2,000円(参加人数に応じて、3,000円)</p>
             <p>参加人数に応じて、跳び賞(5位、10位、15位、20位、BM)として2,000円。</p>
+            <form>
             <select name="number" id="selectNumber" required>
               <option value="">-参加人数を選択してください-</option>
               <option value="10">参加人数10名</option>
@@ -112,6 +113,8 @@ function fetchSelect() {
               <option value="39">参加人数39名</option>
               <option value="40">参加人数40名</option>
             </select>
+            <button type="button" onclick="fetchSelect()">商品例</button>
+            </form>
             <p class="readmore"><a href="/m-cup/award_22.html">&raquo; 参加人数が22名の場合の賞品例</a></p>
       </article>
     </section>
