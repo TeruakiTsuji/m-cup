@@ -104,7 +104,7 @@
               <option value="39">参加人数39名</option>
               <option value="40">参加人数40名</option>
             </select>
-            <button type="submit">賞品例</button>
+            <button type="button" onclick="fetchSelect()">賞品例</button>
             </form>
             <p class="readmore"><a href="/m-cup/award_22.html">&raquo; 参加人数が22名の場合の賞品例</a></p>
       </article>
@@ -135,8 +135,8 @@
 <div id="footer-data"></div>
 
 <script>
-var moveUrl = function(_this, targetName) {
-    var num = _this.options[_this.selectedIndex].value;
+var function fetchSelect() {
+    let num = document.querySelector("#NumberOfPeople")
 	var url = "/m-cup/award_" +  num + ".html"
 
 	if (targetName) {
@@ -144,12 +144,6 @@ var moveUrl = function(_this, targetName) {
 	} else {
 		location.href = url;
 	}
-};
-
-var numberSelect = document.getElementById('NumberOfPeople');
-
-numberSelect.onchange = function() {
-	moveUrl(this, '_blank');
 };
 </script>
 
