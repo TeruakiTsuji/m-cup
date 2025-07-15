@@ -29,8 +29,10 @@ function showOrHide() {//パスワードを表示するか隠すかを判断す�
       var loginuser = loginobj.name;
       var loginpass = loginobj.password;
       if (loginobj.hasOwnProperty("name") && loginobj.hasOwnProperty("password")) {//データが破損していないかの確認（参考:chatgpt）
-        if (loginuser == username && loginpass == password) {
-          found = true;
+        if (loginuser == username) {
+          if (loginpass == password) {
+            found = true;
+          }
         }
       }
       i++;
