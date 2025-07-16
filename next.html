@@ -11,6 +11,16 @@
     background-color: gray;
   }
 </style>
+<script>
+function startFunc() {
+    var loginFg = localStorage.getItem('loginFg');
+    if(loginFg === undefined || loginFg === null){
+        alert("ログインを完了してください。");
+	var url = "/m-cup/login.html";
+	window.location.href = url;
+    }
+}
+</style>
     </head>
 <body onLoad="startFunc()">
     <div id="header-data"></div>
