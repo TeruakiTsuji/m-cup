@@ -12,7 +12,9 @@ function startFunc() {
 }
 function fetchSelect() {
     let num = document.querySelector("#selectNumber");
-    var url = "/m-cup/award_" +  num.value + ".html";
-    window.location.href = url;
+　　if(num.length > 0 ){
+        var url = "/m-cup/award_" +  num.value + ".html";
+        window.location.href = url;
+    }
 }
 </script>
