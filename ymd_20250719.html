@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <div id="head-data"></div>
+</head>
+<body onLoad="startFunc()">
+    <div id="header-data"></div>
+	<table width="100%">
+	<tr>
+		<td align="left">
+    
+		■ 2025年07月19日(土)児玉カントリ
+    
+		</td>
+	</tr>
+	<tr>
+		<td align="left">
+		■ 第９８回松﨑杯
+		<a href="/ymd/20250719/SelIsys">[社員限定]</a>
+		<a href="/ymd/20250719/SelAll">[全員]</a>
+		</td>
+	</tr>
+	</table>
+	<table class="table">
+	<tr bgcolor="#80ffff">
+		<th align="center">順位</th>
+		<th align="center">名前</th>
+		<th align="center">西</th>
+		<th align="center">南</th>
+		<th align="center">グロス</th>
+		<th align="center">HDCP</th>
+		<th align="center">ネット</th>
+		<!-- <th>次回HDCP</th> -->
+	</tr>
+	
+	</table>
+
+<div id="footer-data"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="html-to-id.js"></script>
+<script>
+    addHtmlToId("#head-data", "head.html");
+    addHtmlToId("#header-data", "header.html");
+    addHtmlToId("#footer-data", "footer.html");
+</script>
+</body>
+</html>
