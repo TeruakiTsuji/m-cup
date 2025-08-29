@@ -4,26 +4,7 @@
 <title>松崎杯</title>
 <link rel="stylesheet" href="style.css" type="text/css">
 <link rel="shortcut icon" href="favicon.ico">
-<script>
-function startFunc() {
-    var loginFg = localStorage.getItem('loginFg');
-    if(loginFg === undefined || loginFg === null){
-        alert("ログインを完了してください。");
-	var url = "/m-cup/login.html";
-	window.location.href = url;
-    }
-}
-function fetchSelect() {
-    let num = document.querySelector("#selectNumber");
-　　if(num.length > 0 ){
-        var url = "/m-cup/award_" +  num.value + ".html";
-        window.location.href = url;
-    }
-}
-</script>
 <!--[if lt IE 9]>
 <script src="html5.js"></script>
 <script src="css3-mediaqueries.js"></script>
 <![endif]-->
-<script src="chart.min.js"></script>
-<script src="canvasjs.min.js"></script>
